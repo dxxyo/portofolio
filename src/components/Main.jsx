@@ -11,7 +11,7 @@ const Main = () => {
     <div>
       <Router>
       <Navbar />
-      <div className='my-[95px] h-max pb-[150px] lg:pb-0 lg:h-[340px]'>
+      <div className='sm:my-[95px] my-10 h-max pb-[150px] lg:pb-0 lg:h-[340px]'>
             <Routes>
               <Route path='/' element={<Home />}/>
               <Route path='/skills' element={<Skills />}/>
