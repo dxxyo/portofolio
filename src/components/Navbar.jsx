@@ -10,9 +10,9 @@ const Navbar = () => {
 
   return (
     <div className='w-full flex flex-col items-center lg:items-start'>
-      <div className='sm:flex grid grid-cols-2 gap-2 mt-[40px] sm:space-x-9 tracking-[1px] px-[70px] py-[14px] text-md sm:text-xl border-2 w-full sm:w-max'>
+      <div className='sm:flex grid grid-cols-2 gap-y-2 mt-[40px] sm:space-x-9 tracking-[1px] sm:px-[70px] px-4 py-[14px] text-md sm:text-xl border-2 w-full sm:w-max'>
         <motion.div onClick={() => {setHome(true); setSkill(false); setProjects(false); setContact(false)}} animate={{y: home ? 5 : 0}}>
-          <Link to="/" className={'hover:scale-105 hover:text-highlight ease-linear duration-200 ' + (home ? 'text-highlight' : '')}>Home</Link>
+          <Link to="/" className={'hover:scale-105 hover:text-highlight ease-linear duration-200' + (home ? 'text-highlight' : '')}>Home</Link>
         </motion.div>
         <motion.div onClick={() => {setHome(false); setSkill(true); setProjects(false); setContact(false)}} animate={{y: skill ? 5 : 0}}>
           <Link to="/skills" className={'hover:scale-105 hover:text-highlight ease-linear duration-200 ' + (skill ? 'text-highlight' : '')}>Skills</Link>
