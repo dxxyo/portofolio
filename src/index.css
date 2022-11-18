@@ -5,6 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap');
 
 .main {
-  @apply w-screen h-max lg:h-screen bg-background pt-[62px] pb-7 px-[75px] font-main
+  @apply w-screen h-max lg:h-screen bg-background pt-[62px] pb-7 md:px-[75px] px-5 font-main
 }
 
